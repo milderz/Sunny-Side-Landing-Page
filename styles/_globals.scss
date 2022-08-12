@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+/* Body set up */
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  letter-spacing: 1px;
+  min-height: 100vh;
+  font-family: "Barlow", sans-serif;
+  //   font-family: "Fraunces", serif;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Forms */
+
+input,
+button,
+textarea,
+select,
+option {
+  font: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flx-ct-flxs-cl {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.flx-ct-ct-cl {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.toggle-inactive {
+  filter: brightness(0.4);
+}

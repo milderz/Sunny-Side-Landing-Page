@@ -1,0 +1,68 @@
+.footer {
+  height: 50vh;
+  background-color: $dark-moderate-cyan-footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: filter 0.4s ease;
+
+  &__ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+  }
+
+  &__nav-li {
+    padding: 0 2rem;
+  }
+
+  &__link {
+    font-size: 1.9rem;
+    color: $dark-desaturated-cyan-graphic-design-text;
+    transition: color 0.4s ease;
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__social-li {
+    padding: 0 2rem;
+  }
+
+  &__social-link {
+    font-size: 2.6rem;
+    color: $dark-desaturated-cyan-graphic-design-text;
+    transition: color 0.4s ease;
+
+    &:hover {
+      color: $white;
+    }
+  }
+
+  &__by-text {
+    padding: 2rem 0;
+    font-size: 1.6rem;
+    color: $dark-desaturated-cyan-graphic-design-text;
+
+    a {
+      color: $very-dark-desaturated-blue;
+      transition: color 0.4s ease;
+
+      &:hover {
+        color: $white;
+      }
+    }
+
+    span {
+      color: $very-dark-desaturated-blue;
+    }
+  }
+}

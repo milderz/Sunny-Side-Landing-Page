@@ -1,0 +1,142 @@
+@media screen and (max-width: 810px) {
+  .hero {
+    &__nav {
+      display: none;
+      position: absolute;
+      top: 10rem;
+      left: 50%;
+      background-color: $white;
+      width: 85%;
+      transform: translateX(-50%);
+      height: 20rem;
+      border-radius: 0.5rem;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+        rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+      z-index: 90;
+      transition: opacity 0.4s ease;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: -20px;
+        right: 0;
+        // width: 20px;
+        // height: 20px;
+        // background-color: $white;
+        border-top: 30px solid transparent;
+        border-bottom: 30px solid transparent;
+
+        border-right: 30px solid $white;
+      }
+    }
+
+    &__link {
+      color: $very-dark-desaturated-blue;
+    }
+
+    &__ul {
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100%;
+      padding: 2rem;
+      z-index: 98;
+    }
+
+    &__menu {
+      display: block;
+      fill: $white;
+      cursor: pointer;
+    }
+
+    &__nav-contact-link {
+      background-color: $yellow;
+      width: 10rem;
+      height: 3.5rem;
+    }
+
+    &__body-title {
+      font-size: 4.2rem;
+      width: 10ch;
+      text-align: center;
+    }
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 60vh;
+
+    &__card {
+      padding: 0 4rem;
+    }
+  }
+
+  .testimonials {
+    &__card-container {
+      grid-template-columns: 1fr;
+    }
+
+    &__card {
+      padding: 4rem 0;
+    }
+  }
+
+  .grid-images {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 40vh;
+  }
+}
+
+.nav-active {
+  display: block;
+  animation: nav-bar-fade-in 0.4s ease;
+}
+
+@keyframes nav-bar-fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.menu-disabled {
+  fill: hsla(46, 55%, 94%, 0.445);
+}
+
+@media screen and (max-width: 500px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 60vh;
+
+    &__card {
+      padding: 0 4rem;
+    }
+
+    &__card-title {
+      font-size: 2.8rem;
+    }
+
+    &__card-p {
+      font-size: 1.5rem;
+    }
+  }
+
+  .grid-images {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials {
+    &__p {
+      width: 30ch;
+    }
+  }
+
+  .footer {
+    &__by-text {
+      width: 27ch;
+      text-align: center;
+    }
+  }
+}
